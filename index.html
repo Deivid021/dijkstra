@@ -1,16 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dijkstra - Menor Caminho</title>
     <link rel="stylesheet" href="style.css">
-    <title>trabalho grafo</title>
 </head>
 <body>
-    <div class="main_container">
-        <label for="ponto1">Primeiro ponto:</label>
-        <input type="number" id="ponto1" name="ponto1" placeholder="primeiro ponto">
+    <h1>Dijkstra</h1>
+    <div class="container">
+        <label for="inicio">Cidade de Início:</label>
+        <select id="inicio">
+            <option value="Agronômica">Agronômica</option>
+            <option value="Rio do Sul">Rio do Sul</option>
+            <option value="Ituporanga">Ituporanga</option>
+            <option value="Lontras">Lontras</option>
+            <option value="Trombudo Central">Trombudo Central</option>
+            <option value="Taió">Taió</option>
+            <option value="Presidente Getúlio">Presidente Getúlio</option>
+            <option value="Rio do Oeste">Rio do Oeste</option>
+            <option value="Salete">Salete</option>
+            <option value="Santa Terezinha">Santa Terezinha</option>
+            <option value="Vidal Ramos">Vidal Ramos</option>
+            <option value="Witmarsum">Witmarsum</option>
+            <option value="Vitor Meireles">Vitor Meireles</option>
+            <option value="Pouso Redondo">Pouso Redondo</option>
+            <option value="Presidente Nereu">Presidente Nereu</option>
+            <option value="Rio do Campo">Rio do Campo</option>
+            <option value="Sweet Mirim">Sweet Mirim</option>
+            <option value="Petrolândia">Petrolândia</option>
+            <option value="Agrolândia">Agrolândia</option>
+            <option value="Atalanta">Atalanta</option>
+            <option value="Aurora">Aurora</option>
+            <option value="Braço do Trombudo">Braço do Trombudo</option>
+            <option value="Chapadão do Lageado">Chapadão do Lageado</option>
+            <option value="Dona Emma">Dona Emma</option>
+            <option value="Ibirama">Ibirama</option>
+            <option value="Imbuia">Imbuia</option>
+            <option value="José Boiteux">José Boiteux</option>
+            <option value="Laurentino">Laurentino</option>
+        </select>
+
+        <label for="fim">Cidade de Destino:</label>
+        <select id="fim">
+            <option value="Agronômica">Agronômica</option>
+            <option value="Rio do Sul">Rio do Sul</option>
+            <option value="Ituporanga">Ituporanga</option>
+            <option value="Lontras">Lontras</option>
+            <option value="Trombudo Central">Trombudo Central</option>
+            <option value="Taió">Taió</option>
+            <option value="Presidente Getúlio">Presidente Getúlio</option>
+            <option value="Rio do Oeste">Rio do Oeste</option>
+            <option value="Salete">Salete</option>
+            <option value="Santa Terezinha">Santa Terezinha</option>
+            <option value="Vidal Ramos">Vidal Ramos</option>
+            <option value="Witmarsum">Witmarsum</option>
+            <option value="Vitor Meireles">Vitor Meireles</option>
+            <option value="Pouso Redondo">Pouso Redondo</option>
+            <option value="Presidente Nereu">Presidente Nereu</option>
+            <option value="Rio do Campo">Rio do Campo</option>
+            <option value="Sweet Mirim">Sweet Mirim</option>
+            <option value="Petrolândia">Petrolândia</option>
+            <option value="Agrolândia">Agrolândia</option>
+            <option value="Atalanta">Atalanta</option>
+            <option value="Aurora">Aurora</option>
+            <option value="Braço do Trombudo">Braço do Trombudo</option>
+            <option value="Chapadão do Lageado">Chapadão do Lageado</option>
+            <option value="Dona Emma">Dona Emma</option>
+            <option value="Ibirama">Ibirama</option>
+            <option value="Imbuia">Imbuia</option>
+            <option value="José Boiteux">José Boiteux</option>
+            <option value="Laurentino">Laurentino</option>
+        </select>
+
+        <button onclick="calcularCaminho()">Calcular Menor Caminho</button>
+
+        <div id="resultado"></div>
     </div>
+
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
