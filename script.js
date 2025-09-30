@@ -94,13 +94,12 @@ function criaGrafoAltoVale(grafo) {
         'Agronômica','Rio do Sul','Ituporanga','Lontras','Trombudo Central','Taió',
         'Presidente Getúlio','Rio do Oeste','Salete','Santa Terezinha','Vidal Ramos',
         'Witmarsum','Vitor Meireles','Pouso Redondo','Presidente Nereu','Rio do Campo',
-        'Sweet Mirim','Petrolândia','Agrolândia','Atalanta','Aurora','Braço do Trombudo',
+        'Mirim Doce','Petrolândia','Agrolândia','Atalanta','Aurora','Braço do Trombudo',
         'Chapadão do Lageado','Dona Emma','Ibirama','Imbuia','José Boiteux','Laurentino'
     ];
 
     cidades.forEach(c => grafo.adicionarVertice(c));
 
-    // ----------------- ARESTAS -----------------
     grafo.adicionarAresta('Agronômica', 'Rio do Sul', 'asfalto', 'ruim', 10);
     grafo.adicionarAresta('Agronômica', 'Witmarsum', 'calcamento', 'ruim', 5);
     grafo.adicionarAresta('Agronômica', 'Vidal Ramos', 'asfalto', 'otima', 12.5);
@@ -116,7 +115,7 @@ function criaGrafoAltoVale(grafo) {
     grafo.adicionarAresta('Rio do Sul', 'Braço do Trombudo', 'asfalto', 'otima', 5);
     grafo.adicionarAresta('Rio do Sul', 'Chapadão do Lageado', 'calcamento', 'otima', 3);
 
-    grafo.adicionarAresta('Lontras', 'Sweet Mirim', 'calcamento', 'ruim', 9);
+    grafo.adicionarAresta('Lontras', 'Mirim Doce', 'calcamento', 'ruim', 9);
     grafo.adicionarAresta('Lontras', 'Petrolândia', 'asfalto', 'ruim', 6);
     grafo.adicionarAresta('Lontras', 'Pouso Redondo', 'asfalto', 'otima', 3);
     grafo.adicionarAresta('Lontras', 'Presidente Getúlio', 'calcamento', 'otima', 4);
