@@ -163,13 +163,8 @@ function calcularCaminho() {
 
     const resultado = g.menorCaminho(inicio, fim);
 
-    if (resultado.distance === Infinity) {
-        document.getElementById("resultado").innerHTML =
-            `<p>Não existe caminho entre <strong>${inicio}</strong> e <strong>${fim}</strong>.</p>`;
-    } else {
-        document.getElementById("resultado").innerHTML = `
-            <p><strong>Caminho:</strong> ${resultado.caminho.join(" → ")}</p>
-            <p><strong>Distância total:</strong> ${resultado.distance.toFixed(2)} km</p>
-        `;
-    }
+    document.getElementById("resultado").innerHTML = `
+        <p><strong>Caminho:</strong> ${resultado.caminho.join(" → ")}</p>
+        <p><strong>Distância total:</strong> ${resultado.distance.toFixed(2)} km</p>
+    `;
 }
