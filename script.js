@@ -142,14 +142,15 @@ function criaGrafoAltoVale(grafo) {
     grafo.adicionarAresta('Presidente Nereu', 'Rio do Campo', 'calcamento', 'boa', 6);
     grafo.adicionarAresta('Vitor Meireles', 'Witmarsum', 'calcamento', 'otima', 5);
 
-    grafo.adicionarAresta('Imbuia', 'Agronômica', 'asfalto', 'boa', 12);
-    grafo.adicionarAresta('José Boiteux', 'Rio do Sul', 'calcamento', 'boa', 15);
-    grafo.adicionarAresta('Laurentino', 'Taió', 'chao', 'ruim', 10);
-    grafo.adicionarAresta('Dona Emma', 'Lontras', 'asfalto', 'boa', 8);
-    grafo.adicionarAresta('Ibirama', 'Trombudo Central', 'calcamento', 'boa', 9);
+    grafo.adicionarAresta('Ituporanga', 'Dona Emma', 'calcamento', 'boa', 1)
+    grafo.adicionarAresta('Ituporanga', 'Ibirama', 'asfalto', 'boa', 2)
+    grafo.adicionarAresta('Ituporanga', 'Imbuia', 'asfalto', 'otima', 5)
+    grafo.adicionarAresta('Ituporanga', 'José Boiteux', 'chao', 'otima', 4)
+    grafo.adicionarAresta('Ituporanga', 'Laurentino', 'chao', 'ruim', 8)
 }
 
 criaGrafoAltoVale(g);
+
 
 function calcularCaminho() {
     const inicio = document.getElementById("inicio").value;
